@@ -1,1 +1,36 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    text-transform: uppercase;
+    font-family: 'DS-Digital', sans-serif;
+}
+
+header,
+footer {
+    background-color: #ff9900;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    .table {
+        height: 85vh;
+        font-size: 28px;
+
+        thead th {
+            background: #ff9900;
+        }
+
+        tbody td {
+            background-color: black;
+            color: white;
+        }
+    }
+}
