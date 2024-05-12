@@ -17,7 +17,6 @@ use App\Http\Controllers\Guests\TrainController;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('guests.index');
+});
 
-Route::get('/trains', [TrainController::class, 'index'])->name('guests.trains.index');
-Route::get('/trains/{train}', [TrainController::class, 'show'])->name('guests.trains.show');
+Route::get('/', [TrainController::class, 'index']);
