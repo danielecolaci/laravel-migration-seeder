@@ -13,30 +13,7 @@ class TrainsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $trains = [
-            [
-                'company' => 'Trenitalia',
-                'departure_station' => 'Torino Porta Nuova',
-                'arrival_station' => 'Lecce',
-                'departure_time' => '10:05:00',
-                'arrival_time' => '21:30:00',
-                'train_code' => 'FR 1001',
-                'num_carriages' => 9,
-                'on_time' => 1,
-                'cancelled' => 0,
-            ],
-            [
-                'company' => 'Trenitalia',
-                'departure_station' => 'Bologna Centrale',
-                'arrival_station' => 'Bari Centrale',
-                'departure_time' => '07:55:00',
-                'arrival_time' => '16:40:00',
-                'train_code' => 'IC 909',
-                'num_carriages' => 7,
-                'on_time' => 1,
-                'cancelled' => 0,
-            ]
-        ];
+        $trains = config('db.trains');
 
         foreach($trains as $train) {
             $newTrain = new Train();
