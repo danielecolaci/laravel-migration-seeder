@@ -30,7 +30,20 @@ main {
 
         tbody td {
             background-color: black;
-            color: white;
+            color: #ff9900;
         }
     }
+
+    @media screen and (max-width: 1440px) {
+        .table {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .table {
+            font-size: 16px;
+        }
+    }
+
 }
